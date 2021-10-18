@@ -14,24 +14,25 @@ module.exports = { sum };
 // one euro is:
 let oneEuroIs = {
     "JPY": 127.9, // japan yen
-    "USD": 1.2, // us dollar
+    "USD": 1.206, // us dollar
     "GBP": 0.8, // british pound
 }
 
 const fromDollarToYen = function(valueInDollar) {
-    let valueInYen = valueInDollar * `${JPY}`;
+    let valueInYen = valueInDollar * `${oneEurois.JPY}`;
     return valueInYen;
 }
 
+
 const fromEuroToDollar = function(valueInEuro) {
-    let valueInDollar = valueInEuro * `${USD}`;
+    let valueInDollar = valueInEuro * `${oneEurois.USD}`;
     return valueInDollar;
 }
 
 
 
 const fromYenToPound = function(valueInYen) {
-    let valueInPound = valueInYen * `${GBP}`;
+    let valueInPound = valueInYen * `${oneEurois.GBP}`;
     return valueInPound;
 }
 
