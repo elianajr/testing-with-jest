@@ -19,20 +19,20 @@ let oneEuroIs = {
 }
 
 const fromDollarToYen = function(valueInDollar) {
-    let valueInYen = valueInDollar * `${oneEurois.JPY}`;
+    let valueInYen = valueInDollar * oneEurois.JPY;
     return valueInYen;
 }
 
 
 const fromEuroToDollar = function(valueInEuro) {
-    let valueInDollar = valueInEuro * `${oneEurois.USD}`;
+    let valueInDollar = valueInEuro * oneEurois.USD;
     return valueInDollar;
 }
 
 
 
 const fromYenToPound = function(valueInYen) {
-    let valueInPound = valueInYen * `${oneEurois.GBP}`;
+    let valueInPound = valueInYen * oneEurois.GBP;
     return valueInPound;
 }
 
